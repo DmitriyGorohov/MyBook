@@ -3,9 +3,10 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Provider } from 'react-redux';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 import { Host } from 'react-native-portalize';
 import { persistor, store } from './src/store/store.ts';
+import Routes from './src/navigation/Routes.tsx';
 
 const AppWrapper = () => {
   return (
@@ -23,21 +24,12 @@ const App = () => {
   return (
     <SafeAreaProvider style={styles.container}>
       <StatusBar
-        barStyle="light-content"
+        barStyle="dark-content"
         backgroundColor={'transparent'}
         translucent
       />
       <Host>
-        <View
-          style={{
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <Text>ASD</Text>
-        </View>
-        {/*<Routes />*/}
+        <Routes />
       </Host>
     </SafeAreaProvider>
   );
