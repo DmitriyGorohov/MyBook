@@ -13,13 +13,13 @@ const EventsMainScreenMyBook = (): React.JSX.Element => {
   const handleSwitchIconName = (id: number): IconTypes => {
     switch (id) {
       case 1:
-        return 'events4';
-      case 2:
         return 'events1';
-      case 3:
+      case 2:
         return 'events2';
-      case 4:
+      case 3:
         return 'events3';
+      case 4:
+        return 'events4';
       case 5:
         return 'events5';
       default:

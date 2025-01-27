@@ -5,11 +5,11 @@ export const iconsList = {
   menu: require('./menu/menu.png'),
   qr: require('./qr-code/qr-code.png'),
   reserve_success: require('./reserve_success/Group.png'),
-  events1: require('./events-1/События2.png'),
-  events2: require('./events-2/События3.png'),
-  events3: require('./events-3/События4.png'),
-  events4: require('./events-4/События1.png'),
-  events5: require('./events-5/События5.png'),
+  events1: require('./events-1/events-1.png'),
+  events2: require('./events-2/events-2.png'),
+  events3: require('./events-3/events-3.png'),
+  events4: require('./events-4/events-4.png'),
+  events5: require('./events-5/events-5.png'),
   eventsBack: require('./back-enevts/back-enevts.png'),
 }
 
